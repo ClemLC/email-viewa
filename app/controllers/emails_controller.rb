@@ -1,5 +1,6 @@
 class EmailsController < ApplicationController
   def index
+    @emails = Email.all
     @email_read = Email.where(read: true)
     @email_unread = Email.where(read: false)
   end

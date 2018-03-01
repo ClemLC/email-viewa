@@ -1,2 +1,22 @@
-<h1>Emails#index</h1>
-<p>Find me in app/views/emails/index.html.erb</p>
+<div class="container">
+  <h1>Welcome on Email-Viewa</h1>
+
+  <div class="emails_box">
+    <div class="column" id="list">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>email object</tr>
+          </tr>
+        </thead>
+        <tbody>
+          <% @emails.each do |email| %>
+            <tr>
+              <td><%= email.object %></td>
+            </tr>
+          <%end%>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
